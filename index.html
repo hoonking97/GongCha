@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>공차 코딩 리뉴얼 구현</title>
+</head>
+<script>
+    window.onload = () => {
+        function toggleMenu() {
+            const menu = document.getElementById("menuList");
+            const btn = document.querySelector(".toggle-btn");
+
+            if (menu.classList.contains("hidden")) {
+                menu.classList.remove("hidden");
+                btn.textContent = "메뉴 숨기기";
+            } else {
+                menu.classList.add("hidden");
+                btn.textContent = "메뉴 보이기";
+            }
+        }
+
+        function showAlert(name) {
+            alert(name + " 메뉴를 선택했습니다!");
+        }
+    };
+</script>
+
+<body>
+    <div id="wrap">
+        <header class="header">
+
+        </header><!-- .header end -->
+
+        <main class="main">
+
+
+        </main><!-- .main end -->
+
+        <div class="bottom_nav">
+
+
+        </div><!-- .bottom_nav end -->
+
+        <footer class="footer">
+
+
+        </footer><!-- .footer end -->
+
+    </div><!-- #wrap end -->
+
+</body>
+</html>
